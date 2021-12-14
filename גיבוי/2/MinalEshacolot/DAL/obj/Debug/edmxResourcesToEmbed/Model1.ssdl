@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MinalEshcolotModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EQUIPMENT">
+    <Key>
+      <PropertyRef Name="ITEM_ID" />
+    </Key>
+    <Property Name="ITEM_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ITEM_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="ITEM_COUNT" Type="int" />
+  </EntityType>
+  <EntityType Name="INLAY">
+    <Key>
+      <PropertyRef Name="INLAY_ID" />
+    </Key>
+    <Property Name="INLAY_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="INLAY_DATE" Type="datetime" />
+    <Property Name="FROM_HOUER" Type="datetime" />
+    <Property Name="TO_HOUER" Type="datetime" />
+    <Property Name="USR_ID" Type="int" />
+    <Property Name="ONE_TIME_OR_WEEKLY" Type="int" />
+    <Property Name="SEVERAL_SESSIONS" Type="int" />
+  </EntityType>
+  <EntityType Name="INLAY_EQUIPMENT">
+    <Key>
+      <PropertyRef Name="INTALY_ID" />
+      <PropertyRef Name="ITEM_ID" />
+    </Key>
+    <Property Name="INTALY_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_ID" Type="int" Nullable="false" />
+    <Property Name="ITEM_COUNT" Type="int" />
+  </EntityType>
+  <EntityType Name="INLAY_ROOMS">
+    <Key>
+      <PropertyRef Name="INTALY_ID" />
+      <PropertyRef Name="ROOM_ID" />
+    </Key>
+    <Property Name="INTALY_ID" Type="int" Nullable="false" />
+    <Property Name="ROOM_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ROOM_TYPE">
+    <Key>
+      <PropertyRef Name="TYPE_ID" />
+    </Key>
+    <Property Name="TYPE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TYPE_NAME" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ROOMS">
+    <Key>
+      <PropertyRef Name="ROOM_ID" />
+    </Key>
+    <Property Name="ROOM_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ROOM_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="ROOM_FLOOR" Type="int" />
+    <Property Name="ROOM_TONNAGE" Type="int" />
+    <Property Name="ROOM_TYPE" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="USERS">
+    <Key>
+      <PropertyRef Name="USR_ID" />
+    </Key>
+    <Property Name="USR_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="USR_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="USR_PHONE" Type="int" />
+    <Property Name="USR_CITY" Type="nvarchar" MaxLength="50" />
+    <Property Name="USR_ADDRESS" Type="nvarchar" MaxLength="50" />
+    <Property Name="USR_PASSWARD" Type="nchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="FK_INLAY_EQUIPMENT_EQUIPMENT">
+    <End Role="EQUIPMENT" Type="Self.EQUIPMENT" Multiplicity="1" />
+    <End Role="INLAY_EQUIPMENT" Type="Self.INLAY_EQUIPMENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EQUIPMENT">
+        <PropertyRef Name="ITEM_ID" />
+      </Principal>
+      <Dependent Role="INLAY_EQUIPMENT">
+        <PropertyRef Name="ITEM_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INLAY_EQUIPMENT_INLAY">
+    <End Role="INLAY" Type="Self.INLAY" Multiplicity="1" />
+    <End Role="INLAY_EQUIPMENT" Type="Self.INLAY_EQUIPMENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INLAY">
+        <PropertyRef Name="INLAY_ID" />
+      </Principal>
+      <Dependent Role="INLAY_EQUIPMENT">
+        <PropertyRef Name="INTALY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INLAY_ROOMS_INLAY">
+    <End Role="INLAY" Type="Self.INLAY" Multiplicity="1" />
+    <End Role="INLAY_ROOMS" Type="Self.INLAY_ROOMS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INLAY">
+        <PropertyRef Name="INLAY_ID" />
+      </Principal>
+      <Dependent Role="INLAY_ROOMS">
+        <PropertyRef Name="INTALY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INLAY_ROOMS_ROOMS">
+    <End Role="ROOMS" Type="Self.ROOMS" Multiplicity="1" />
+    <End Role="INLAY_ROOMS" Type="Self.INLAY_ROOMS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROOMS">
+        <PropertyRef Name="ROOM_ID" />
+      </Principal>
+      <Dependent Role="INLAY_ROOMS">
+        <PropertyRef Name="ROOM_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INLAY_USERS">
+    <End Role="USERS" Type="Self.USERS" Multiplicity="0..1" />
+    <End Role="INLAY" Type="Self.INLAY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USERS">
+        <PropertyRef Name="USR_ID" />
+      </Principal>
+      <Dependent Role="INLAY">
+        <PropertyRef Name="USR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ROOMS_ROOM_TYPE">
+    <End Role="ROOM_TYPE" Type="Self.ROOM_TYPE" Multiplicity="0..1" />
+    <End Role="ROOMS" Type="Self.ROOMS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROOM_TYPE">
+        <PropertyRef Name="TYPE_ID" />
+      </Principal>
+      <Dependent Role="ROOMS">
+        <PropertyRef Name="ROOM_TYPE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="procFindRoom" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="type" Type="int" Mode="In" />
+    <Parameter Name="tonnage" Type="int" Mode="In" />
+    <Parameter Name="floor" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="MinalEshcolotModelStoreContainer">
+    <EntitySet Name="EQUIPMENT" EntityType="Self.EQUIPMENT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INLAY" EntityType="Self.INLAY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INLAY_EQUIPMENT" EntityType="Self.INLAY_EQUIPMENT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INLAY_ROOMS" EntityType="Self.INLAY_ROOMS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ROOM_TYPE" EntityType="Self.ROOM_TYPE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ROOMS" EntityType="Self.ROOMS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USERS" EntityType="Self.USERS" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_INLAY_EQUIPMENT_EQUIPMENT" Association="Self.FK_INLAY_EQUIPMENT_EQUIPMENT">
+      <End Role="EQUIPMENT" EntitySet="EQUIPMENT" />
+      <End Role="INLAY_EQUIPMENT" EntitySet="INLAY_EQUIPMENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INLAY_EQUIPMENT_INLAY" Association="Self.FK_INLAY_EQUIPMENT_INLAY">
+      <End Role="INLAY" EntitySet="INLAY" />
+      <End Role="INLAY_EQUIPMENT" EntitySet="INLAY_EQUIPMENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INLAY_ROOMS_INLAY" Association="Self.FK_INLAY_ROOMS_INLAY">
+      <End Role="INLAY" EntitySet="INLAY" />
+      <End Role="INLAY_ROOMS" EntitySet="INLAY_ROOMS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INLAY_ROOMS_ROOMS" Association="Self.FK_INLAY_ROOMS_ROOMS">
+      <End Role="ROOMS" EntitySet="ROOMS" />
+      <End Role="INLAY_ROOMS" EntitySet="INLAY_ROOMS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INLAY_USERS" Association="Self.FK_INLAY_USERS">
+      <End Role="USERS" EntitySet="USERS" />
+      <End Role="INLAY" EntitySet="INLAY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ROOMS_ROOM_TYPE" Association="Self.FK_ROOMS_ROOM_TYPE">
+      <End Role="ROOM_TYPE" EntitySet="ROOM_TYPE" />
+      <End Role="ROOMS" EntitySet="ROOMS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

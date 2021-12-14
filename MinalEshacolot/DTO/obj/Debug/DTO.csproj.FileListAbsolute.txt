@@ -1,0 +1,78 @@
+L:\שנה ב\מהט\תלמידות\תמר שהרבני\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\DTO.dll
+L:\שנה ב\מהט\תלמידות\תמר שהרבני\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\DTO.pdb
+L:\שנה ב\מהט\תלמידות\תמר שהרבני\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\DAL.dll
+L:\שנה ב\מהט\תלמידות\תמר שהרבני\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\EntityFramework.dll
+L:\שנה ב\מהט\תלמידות\תמר שהרבני\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\DAL.pdb
+L:\שנה ב\מהט\תלמידות\תמר שהרבני\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\DAL.dll.config
+L:\שנה ב\מהט\תלמידות\תמר שהרבני\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\EntityFramework.xml
+L:\שנה ב\מהט\תלמידות\תמר שהרבני\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+L:\שנה ב\מהט\תלמידות\תמר שהרבני\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+L:\שנה ב\מהט\תלמידות\תמר שהרבני\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\obj\Debug\DTO.csproj.CopyComplete
+L:\שנה ב\מהט\תלמידות\תמר שהרבני\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\obj\Debug\DTO.dll
+L:\שנה ב\מהט\תלמידות\תמר שהרבני\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\obj\Debug\DTO.pdb
+C:\Users\12345\Desktop\תמר\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\DTO.dll
+C:\Users\12345\Desktop\תמר\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\DTO.pdb
+C:\Users\12345\Desktop\תמר\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\DAL.dll
+C:\Users\12345\Desktop\תמר\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\EntityFramework.dll
+C:\Users\12345\Desktop\תמר\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\DAL.pdb
+C:\Users\12345\Desktop\תמר\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\DAL.dll.config
+C:\Users\12345\Desktop\תמר\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\EntityFramework.xml
+C:\Users\12345\Desktop\תמר\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\12345\Desktop\תמר\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\12345\Desktop\תמר\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\12345\Desktop\תמר\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\obj\Debug\DTO.dll
+C:\Users\12345\Desktop\תמר\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\obj\Debug\DTO.pdb
+C:\Users\12345\Desktop\הפרויקט!!!\MinalEshacolot\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\12345\Desktop\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\DTO.dll
+C:\Users\12345\Desktop\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\DTO.pdb
+C:\Users\12345\Desktop\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\DAL.dll
+C:\Users\12345\Desktop\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\EntityFramework.dll
+C:\Users\12345\Desktop\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\DAL.pdb
+C:\Users\12345\Desktop\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\DAL.dll.config
+C:\Users\12345\Desktop\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\EntityFramework.xml
+C:\Users\12345\Desktop\הפרויקט!!!\MinalEshacolot\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\12345\Desktop\הפרויקט!!!\MinalEshacolot\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\12345\Desktop\הפרויקט!!!\MinalEshacolot\DTO\obj\Debug\DTO.dll
+C:\Users\12345\Desktop\הפרויקט!!!\MinalEshacolot\DTO\obj\Debug\DTO.pdb
+C:\Users\12345\Desktop\פרויקט-גיבוי\1\MinalEshacolot\DTO\bin\Debug\DTO.dll
+C:\Users\12345\Desktop\פרויקט-גיבוי\1\MinalEshacolot\DTO\bin\Debug\DTO.pdb
+C:\Users\12345\Desktop\פרויקט-גיבוי\1\MinalEshacolot\DTO\bin\Debug\DAL.dll
+C:\Users\12345\Desktop\פרויקט-גיבוי\1\MinalEshacolot\DTO\bin\Debug\EntityFramework.dll
+C:\Users\12345\Desktop\פרויקט-גיבוי\1\MinalEshacolot\DTO\bin\Debug\DAL.pdb
+C:\Users\12345\Desktop\פרויקט-גיבוי\1\MinalEshacolot\DTO\bin\Debug\DAL.dll.config
+C:\Users\12345\Desktop\פרויקט-גיבוי\1\MinalEshacolot\DTO\bin\Debug\EntityFramework.xml
+C:\Users\12345\Desktop\פרויקט-גיבוי\1\MinalEshacolot\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\12345\Desktop\פרויקט-גיבוי\1\MinalEshacolot\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\12345\Desktop\פרויקט-גיבוי\1\MinalEshacolot\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\12345\Desktop\פרויקט-גיבוי\1\MinalEshacolot\DTO\obj\Debug\DTO.dll
+C:\Users\12345\Desktop\פרויקט-גיבוי\1\MinalEshacolot\DTO\obj\Debug\DTO.pdb
+C:\Users\12345\Desktop\תמר\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\AutoMapper.dll
+C:\Users\12345\Desktop\תמר\פרויקט\הפרויקט!!!\MinalEshacolot\DTO\bin\Debug\AutoMapper.xml
+C:\Users\12345\Desktop\תמר\Project\project\MinalEshacolot\DTO\bin\Debug\DTO.dll
+C:\Users\12345\Desktop\תמר\Project\project\MinalEshacolot\DTO\bin\Debug\DTO.pdb
+C:\Users\12345\Desktop\תמר\Project\project\MinalEshacolot\DTO\bin\Debug\AutoMapper.dll
+C:\Users\12345\Desktop\תמר\Project\project\MinalEshacolot\DTO\bin\Debug\DAL.dll
+C:\Users\12345\Desktop\תמר\Project\project\MinalEshacolot\DTO\bin\Debug\EntityFramework.dll
+C:\Users\12345\Desktop\תמר\Project\project\MinalEshacolot\DTO\bin\Debug\DAL.pdb
+C:\Users\12345\Desktop\תמר\Project\project\MinalEshacolot\DTO\bin\Debug\DAL.dll.config
+C:\Users\12345\Desktop\תמר\Project\project\MinalEshacolot\DTO\bin\Debug\AutoMapper.xml
+C:\Users\12345\Desktop\תמר\Project\project\MinalEshacolot\DTO\bin\Debug\EntityFramework.xml
+C:\Users\12345\Desktop\תמר\Project\project\MinalEshacolot\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\12345\Desktop\תמר\Project\project\MinalEshacolot\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\12345\Desktop\תמר\Project\project\MinalEshacolot\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\12345\Desktop\תמר\Project\project\MinalEshacolot\DTO\obj\Debug\DTO.dll
+C:\Users\12345\Desktop\תמר\Project\project\MinalEshacolot\DTO\obj\Debug\DTO.pdb
+C:\Users\12345\Desktop\תמר\Project\project\גיבוי\MinalEshacolot\DTO\bin\Debug\DTO.dll
+C:\Users\12345\Desktop\תמר\Project\project\גיבוי\MinalEshacolot\DTO\bin\Debug\DTO.pdb
+C:\Users\12345\Desktop\תמר\Project\project\גיבוי\MinalEshacolot\DTO\bin\Debug\AutoMapper.dll
+C:\Users\12345\Desktop\תמר\Project\project\גיבוי\MinalEshacolot\DTO\bin\Debug\DAL.dll
+C:\Users\12345\Desktop\תמר\Project\project\גיבוי\MinalEshacolot\DTO\bin\Debug\EntityFramework.dll
+C:\Users\12345\Desktop\תמר\Project\project\גיבוי\MinalEshacolot\DTO\bin\Debug\DAL.pdb
+C:\Users\12345\Desktop\תמר\Project\project\גיבוי\MinalEshacolot\DTO\bin\Debug\DAL.dll.config
+C:\Users\12345\Desktop\תמר\Project\project\גיבוי\MinalEshacolot\DTO\bin\Debug\AutoMapper.xml
+C:\Users\12345\Desktop\תמר\Project\project\גיבוי\MinalEshacolot\DTO\bin\Debug\EntityFramework.xml
+C:\Users\12345\Desktop\תמר\Project\project\גיבוי\MinalEshacolot\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\12345\Desktop\תמר\Project\project\גיבוי\MinalEshacolot\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\12345\Desktop\תמר\Project\project\גיבוי\MinalEshacolot\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\12345\Desktop\תמר\Project\project\גיבוי\MinalEshacolot\DTO\obj\Debug\DTO.dll
+C:\Users\12345\Desktop\תמר\Project\project\גיבוי\MinalEshacolot\DTO\obj\Debug\DTO.pdb
